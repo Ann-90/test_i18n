@@ -3,11 +3,11 @@
 
 `git clone git@github.com:Ann-90/test_i18n.git`
 
-* Enter the root derectory of the project
+* Enter the root directory of the project
 
 `cd test_i18n`
 
-* In the root derectory create the environment
+* In the root directory create the environment
 
 `python3 -m venv env_name`
 
@@ -19,4 +19,4 @@
 
 `pytest --language={language} test_items.py -s -v`
 
-* Don't forget to dreank your tea 
+* Don't forget to drink your tea 
