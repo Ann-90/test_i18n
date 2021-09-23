@@ -13,7 +13,7 @@ def pytest_addoption(parser):
 def browser(request):
     lang = request.config.getoption("language")
     opt = Options()
-    # opt.add_experimental_option('prefs', {'intl.accept_languages': lang})
+    opt.add_experimental_option('prefs', {'intl.accept_languages': lang})
 
     if lang:
         print("\nstart chrome browser for test..")
@@ -22,12 +22,6 @@ def browser(request):
         raise pytest.UsageError("chose the --language")
 
     yield browser
+    time.sleep(3)
     print("\nquit browser..")
     browser.quit()
-
-
-@pytest.fixture(scope="function")
-def link(request):
-    lang = request.config.getoption("language")
-    link = f'http://selenium1py.pythonanywhere.com/{lang}/catalogue/coders-at-work_207/'
-    return link

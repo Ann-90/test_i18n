@@ -1,4 +1,5 @@
-def test_check_add_basket_btn(browser, link):
+def test_check_add_basket_btn(browser):
+    link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
     browser.implicitly_wait(5)
     browser.get(link)
 
