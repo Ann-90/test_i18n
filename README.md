@@ -1,4 +1,7 @@
-# TEST I18N (@annvoro)
+# TEST I18N
+
+This is the task from the "Testing" course. You should check if the language switcher exists:
+
 * Clone the project. For example:
 
 `git clone git@github.com:Ann-90/test_i18n.git`
